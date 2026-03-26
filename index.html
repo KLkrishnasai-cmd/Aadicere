@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Aadicere unites NRG, ARX, STRUX, and IATRIK to deliver secure, practical, multi-disciplinary solutions.">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:; img-src 'self' data: https://api.dicebear.com; connect-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
     <title>aadicere.tech - Multi-Disciplinary Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body class="scroll-smooth">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Navigation -->
     <header class="fixed top-0 w-full z-50 bg-gradient-to-r from-slate-900 to-slate-800 backdrop-blur-md border-b border-slate-700/50 shadow-lg">
-        <nav class="container mx-auto px-6 py-4 max-w-7xl">
+        <nav class="container mx-auto px-6 py-4 max-w-7xl" aria-label="Primary navigation">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
                 <a href="#home" class="text-2xl font-bold bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent hover:scale-110 transition-transform duration-300">
@@ -30,27 +36,27 @@
                 <div class="hidden md:block relative dropdown-container">
                     <button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-700/50 hover:bg-slate-700 text-slate-300 hover:text-white transition-all duration-300 font-medium" aria-haspopup="true" aria-expanded="false" aria-controls="divisions-menu">
                         <span>Divisions</span>
-                        <i class="fas fa-chevron-down text-xs"></i>
+                        <i class="fas fa-chevron-down text-xs" aria-hidden="true"></i>
                     </button>
                     <div id="divisions-menu" class="dropdown-menu absolute top-full mt-2 left-0 bg-slate-800 border border-slate-700 rounded-xl shadow-2xl min-w-48" style="opacity: 0; visibility: hidden; transform: translateY(-8px);" role="menu" aria-label="Divisions menu">
-                        <a href="nrg.html" class="block px-6 py-3 text-slate-300 hover:text-white hover:bg-slate-700/50 transition-colors duration-300 font-medium border-b border-slate-700/30 first:rounded-t-xl last:border-b-0 last:rounded-b-xl">
+                        <a href="nrg.html" role="menuitem" class="block px-6 py-3 text-slate-300 hover:text-white hover:bg-slate-700/50 transition-colors duration-300 font-medium border-b border-slate-700/30 first:rounded-t-xl last:border-b-0 last:rounded-b-xl">
                             <span class="inline-block w-2 h-2 rounded-full bg-red-500 mr-2"></span>NRG
                         </a>
-                        <a href="arx.html" class="block px-6 py-3 text-slate-300 hover:text-white hover:bg-slate-700/50 transition-colors duration-300 font-medium border-b border-slate-700/30 first:rounded-t-xl last:border-b-0 last:rounded-b-xl">
+                        <a href="arx.html" role="menuitem" class="block px-6 py-3 text-slate-300 hover:text-white hover:bg-slate-700/50 transition-colors duration-300 font-medium border-b border-slate-700/30 first:rounded-t-xl last:border-b-0 last:rounded-b-xl">
                             <span class="inline-block w-2 h-2 rounded-full bg-blue-500 mr-2"></span>ARX
                         </a>
-                        <a href="strux.html" class="block px-6 py-3 text-slate-300 hover:text-white hover:bg-slate-700/50 transition-colors duration-300 font-medium border-b border-slate-700/30 first:rounded-t-xl last:border-b-0 last:rounded-b-xl">
+                        <a href="strux.html" role="menuitem" class="block px-6 py-3 text-slate-300 hover:text-white hover:bg-slate-700/50 transition-colors duration-300 font-medium border-b border-slate-700/30 first:rounded-t-xl last:border-b-0 last:rounded-b-xl">
                             <span class="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>STRUX
                         </a>
-                        <a href="iatrik.html" class="block px-6 py-3 text-slate-300 hover:text-white hover:bg-slate-700/50 transition-colors duration-300 font-medium border-b border-slate-700/30 first:rounded-t-xl last:border-b-0 last:rounded-b-xl">
+                        <a href="iatrik.html" role="menuitem" class="block px-6 py-3 text-slate-300 hover:text-white hover:bg-slate-700/50 transition-colors duration-300 font-medium border-b border-slate-700/30 first:rounded-t-xl last:border-b-0 last:rounded-b-xl">
                             <span class="inline-block w-2 h-2 rounded-full bg-purple-500 mr-2"></span>IATRIK
                         </a>
                     </div>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button id="mobileMenuBtn" class="md:hidden text-slate-300 hover:text-white transition-colors duration-300">
-                    <i class="fas fa-bars text-xl"></i>
+                <button id="mobileMenuBtn" class="md:hidden text-slate-300 hover:text-white transition-colors duration-300" aria-label="Open navigation menu" aria-controls="mobileMenu" aria-expanded="false">
+                    <i class="fas fa-bars text-xl" aria-hidden="true"></i>
                 </button>
             </div>
 
@@ -70,6 +76,8 @@
             </div>
         </nav>
     </header>
+
+    <main id="main-content" tabindex="-1">
 
     <!-- Hero Section -->
     <section id="home" class="pt-28 md:pt-32 pb-16 md:pb-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
@@ -333,36 +341,40 @@
                         <p class="text-xl text-white">Andhra Pradesh, India</p>
                     </div>
                     <div class="flex gap-4 pt-8">
-                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:text-red-500 hover:bg-slate-700 transition-all duration-300">
-                            <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Aadicere on LinkedIn" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:text-red-500 hover:bg-slate-700 transition-all duration-300">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:text-red-500 hover:bg-slate-700 transition-all duration-300">
-                            <i class="fab fa-twitter"></i>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Aadicere on X" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:text-red-500 hover:bg-slate-700 transition-all duration-300">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:text-red-500 hover:bg-slate-700 transition-all duration-300">
-                            <i class="fab fa-facebook"></i>
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Aadicere on Facebook" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:text-red-500 hover:bg-slate-700 transition-all duration-300">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Contact Form -->
-                <form class="space-y-4">
+                <form id="contact-form" class="space-y-4" novalidate>
                     <div>
-                        <input type="text" placeholder="Your Name" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-red-500/50 transition-colors duration-300">
+                        <label for="contact-name" class="sr-only">Your Name</label>
+                        <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your Name" required maxlength="80" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-red-500/50 transition-colors duration-300">
                     </div>
                     <div>
-                        <input type="email" placeholder="Your Email" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-red-500/50 transition-colors duration-300">
+                        <label for="contact-email" class="sr-only">Your Email</label>
+                        <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="Your Email" required maxlength="120" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-red-500/50 transition-colors duration-300">
                     </div>
                     <div>
-                        <textarea placeholder="Your Message" rows="5" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-red-500/50 transition-colors duration-300 resize-none"></textarea>
+                        <label for="contact-message" class="sr-only">Your Message</label>
+                        <textarea id="contact-message" name="message" placeholder="Your Message" rows="5" required maxlength="1500" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-red-500/50 transition-colors duration-300 resize-none"></textarea>
                     </div>
-                    <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-red-500/50 transition-all duration-300 transform hover:scale-105">
+                    <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-red-500/50 transition-all duration-300 transform hover:scale-105" aria-live="polite">
                         Send Message
                     </button>
                 </form>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-slate-950 border-t border-slate-900 py-12">
